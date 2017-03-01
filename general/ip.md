@@ -21,7 +21,7 @@ address based on these headers and other information from the connecting client:
     address from the LAN behind the proxy. In this case other variables might
     contain the IP address.
 
-* `$_SERVER['X_FORWARDED_FOR']`
+* `$_SERVER['HTTP_X_FORWARDED_FOR']`
 
     If a client is behind a proxy then the proxy might set the `X_FORWARDED_FOR`
     HTTP header field, which can differ from the one in `$_SERVER['REMOTE_ADDR']`.
